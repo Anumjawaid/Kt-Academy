@@ -1,0 +1,17 @@
+.headingRenderer {
+    display: flex;
+    align-items: start;
+    width: 110%;
+
+    span {
+        vertical-align: middle;
+        width: 100%;
+        text-align: left;
+    }
+
+    &:hover {
+        i {
+            visibility: visible;
+        }
+    }
+}

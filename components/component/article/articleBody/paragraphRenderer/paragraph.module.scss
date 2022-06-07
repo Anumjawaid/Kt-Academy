@@ -1,0 +1,17 @@
+.paragraphContainer {
+  display: flex;
+  width: 110%;
+
+  &:hover {
+    i {
+      visibility: visible;
+    }
+  }
+
+  p {
+    width: 100%;
+  }
+}
+
+.paragraph {
+}

@@ -1,0 +1,33 @@
+.listRenderer {
+  display: flex;
+  align-items: start;
+  width: 110%;
+
+  ul {
+    vertical-align: middle;
+    width: 100%;
+    text-align: left;
+  }
+
+  .listElement {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+      i {
+        text-align: right;
+        visibility: visible;
+      }
+    }
+  }
+
+  .listParent {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover > i {
+      text-align: right;
+      visibility: visible;
+    }
+  }
+}

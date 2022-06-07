@@ -1,0 +1,120 @@
+/* PlusMinus */
+
+/*https://codepen.io/tobyj/pen/vGbpPj*/
+
+body {
+    font-family: BlinkMacSystemFont, futura, "Roboto", sans-serif;
+}
+
+.plusminus-wrapper {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.plusminus {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 132px;
+    height: 44px;
+    margin: 5px 20px 20px;
+}
+
+.plusminus button {
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #000;
+    color: #fff;
+    font-size: 30.8px;
+    line-height: 1;
+    font-family: bonds, sans-serif;
+    cursor: pointer;
+}
+
+.plusminus button:focus {
+    outline: none;
+    color: #2bebaf;
+}
+
+.plusminus button:disabled {
+    background: #999;
+    color: #ccc;
+    cursor: default;
+}
+
+.plusminus .minus {
+    bottom: 0;
+    left: 0;
+}
+
+.plusminus .plus {
+    top: 0;
+    right: 0;
+}
+
+.plusminus .plus:focus {
+    color: #ff6367;
+}
+
+.plusminus input[type=number] {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0 0 16.9230769231px;
+    border: 0;
+    font-size: 17.6px;
+    font-weight: bold;
+    text-align: center;
+    -moz-appearance: textfield;
+    top: 0;
+    left: 44px;
+}
+
+.plusminus input[type=number]::-webkit-outer-spin-button, .plusminus input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.plusminus-unit {
+    position: absolute;
+    font-size: 9.68px;
+    left: 0;
+    right: 0;
+    line-height: 1;
+    padding: 3.52px 0 3.52px 0;
+    width: 44px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    color: #888;
+    text-align: center;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+/* MusicTimerPage */
+
+.clickable {
+    cursor: pointer;
+    color: #1f4153;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: calc(0.5625 * 100%);
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

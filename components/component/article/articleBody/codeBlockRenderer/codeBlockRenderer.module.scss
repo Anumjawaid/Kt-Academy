@@ -1,0 +1,15 @@
+.codeBlock {
+  display: flex;
+  align-items: start;
+  width: 110%;
+
+  > div, > pre {
+    width: 100%;
+  }
+
+  &:hover {
+    i {
+      visibility: visible;
+    }
+  }
+}
